@@ -30,6 +30,8 @@ public class Caso {
         this.Denunciante = Denunciante;
         this. RegistroHistorico = new Historial(Estado, FechaCreacion);
     }
+    
+
 
     public int getNumeroCaso() {
         return NumeroCaso;

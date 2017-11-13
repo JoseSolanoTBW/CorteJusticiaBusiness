@@ -5,7 +5,7 @@
 package Business.Persona;
 
 public class Persona {
-
+    protected int idPersona;
     protected int Cedula;
     protected  String Nombre;
     protected  String Apellido;
@@ -21,7 +21,22 @@ public class Persona {
         this.Apellido = Apellido;
         this.Telefono = Telefono;
         this.Direccion = Direccion;
+    }
+    public Persona(int idPersona,int Cedula, String Nombre, String Apellido, int Telefono, String Direccion) {
+        this.Cedula = Cedula;
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Telefono = Telefono;
+        this.Direccion = Direccion;
     } 
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    public void setIdPersona(int idPersona) {
+        this.idPersona = idPersona;
+    }
 
     public int getCedula() {
         return Cedula;
