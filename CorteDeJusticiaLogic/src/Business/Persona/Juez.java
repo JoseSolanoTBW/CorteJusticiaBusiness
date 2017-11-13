@@ -43,6 +43,13 @@ public class Juez extends Persona {
         this.SalaJustica = SalaJustica;
         this.LoginUsuario = new Usuario(idUsuario, NombreUsuario);
     }
+ 
+    public Juez(int idPersona,int Cedula, String Nombre, String Apellido, int Telefono, String Direccion,int NumeroJuez, int NumeroSala, String NombreSala, String NombreUsuario, int idUsuario) {
+        super(idPersona, Cedula, Nombre, Apellido, Telefono, Direccion);
+        this.NumeroJuez = NumeroJuez;
+        this.SalaJustica = new  Sala(NumeroSala, NombreSala);
+        this.LoginUsuario = new Usuario(idUsuario, NombreUsuario);
+    }
 
     public int getNumeroJuez() {
         return NumeroJuez;
@@ -59,5 +66,14 @@ public class Juez extends Persona {
     public void setSalaJustica(Sala SalaJustica) {
         this.SalaJustica = SalaJustica;
     }
+
+    public Usuario getLoginUsuario() {
+        return LoginUsuario;
+    }
+
+    public void setLoginUsuario(Usuario LoginUsuario) {
+        this.LoginUsuario = LoginUsuario;
+    }
+    
 
 }
