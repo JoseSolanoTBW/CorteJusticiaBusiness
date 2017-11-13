@@ -23,6 +23,7 @@ public class Persona {
         this.Direccion = Direccion;
     }
     public Persona(int idPersona,int Cedula, String Nombre, String Apellido, int Telefono, String Direccion) {
+        this.idPersona = idPersona;
         this.Cedula = Cedula;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
